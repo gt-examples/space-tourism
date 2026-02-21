@@ -42,17 +42,17 @@ export default function CountdownTimer({ targetDate, compact }: CountdownTimerPr
   return (
     <div className="flex gap-4 justify-center">
       {[
-        { value: timeLeft.days, label: "Days" },
-        { value: timeLeft.hours, label: "Hours" },
-        { value: timeLeft.minutes, label: "Minutes" },
-        { value: timeLeft.seconds, label: "Seconds" },
+        { value: timeLeft.days, label: gt("Days") },
+        { value: timeLeft.hours, label: gt("Hours") },
+        { value: timeLeft.minutes, label: gt("Minutes") },
+        { value: timeLeft.seconds, label: gt("Seconds") },
       ].map((item) => (
         <div key={item.label} className="flex flex-col items-center">
           <span className="text-3xl sm:text-5xl font-bold text-space-cyan font-mono">
             <Num>{item.value}</Num>
           </span>
           <span className="text-xs sm:text-sm text-neutral-400 mt-1">
-            {gt(item.label)}
+            {item.label}
           </span>
         </div>
       ))}

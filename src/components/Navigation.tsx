@@ -22,15 +22,15 @@ function GitHubIcon() {
   );
 }
 
-const navItems = [
-  { href: "/", labelKey: "Home" },
-  { href: "/destinations", labelKey: "Destinations" },
-  { href: "/booking", labelKey: "Book a Trip" },
-  { href: "/schedule", labelKey: "Launch Schedule" },
-];
-
 export default function Navigation() {
   const gt = useGT();
+
+  const navItems = [
+    { href: "/", label: gt("Home") },
+    { href: "/destinations", label: gt("Destinations") },
+    { href: "/booking", label: gt("Book a Trip") },
+    { href: "/schedule", label: gt("Launch Schedule") },
+  ];
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const segments = pathname.split("/").filter(Boolean);
@@ -60,7 +60,7 @@ export default function Navigation() {
                         : "text-neutral-300 hover:bg-space-border/50 hover:text-white"
                     }`}
                   >
-                    {gt(item.labelKey)}
+                    {item.label}
                   </Link>
                 );
               })}
@@ -102,7 +102,7 @@ export default function Navigation() {
                       : "text-neutral-400 hover:bg-space-border/50"
                   }`}
                 >
-                  {gt(item.labelKey)}
+                  {item.label}
                 </Link>
               );
             })}

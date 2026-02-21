@@ -154,6 +154,8 @@
     "t": "h2"
   },
   "2ea95ade2ae9e528": "Taxe",
+  "2ecf88ef9e8e4259": "Accueil",
+  "30f3327fab8e25ac": "Secondes",
   "367ad8a414f1a4a6": "Toutes les destinations",
   "3a114edba360504e": [
     {
@@ -188,6 +190,8 @@
     "t": "h2"
   },
   "6fc6888810c397f8": "Réservez votre voyage",
+  "73c71e0dd21b305f": "Jours",
+  "75086bcb1226cb10": "Destinations",
   "7853bd9e23f25bb6": "Total",
   "78c24a33890693ea": {
     "c": "Destinations populaires",
@@ -293,7 +297,8 @@
       "t": "p"
     }
   ],
-  "c4767f1200883372": "Explorez des destinations partout dans le système solaire. Réservez des voyages vers la Lune, Mars, des stations orbitales et au-delà avec SpaceVoyager.",
+  "c24d667a6855f5ed": "Calendrier des lancements",
+  "c4767f1200883372": "Explorez des destinations aux quatre coins du système solaire. Réservez votre voyage vers la Lune, Mars, des stations orbitales et au‑delà avec SpaceVoyager.",
   "c93eb145a6e65b7e": {
     "c": "Ceci est une démonstration. Aucune réservation réelle n'a été effectuée.",
     "i": 1,
@@ -312,6 +317,7 @@
       "t": "p"
     }
   ],
+  "ce659422b9a8dcf5": "Heures",
   "d0ac65c37c06b64e": [
     {
       "c": [
@@ -324,7 +330,7 @@
                   "k": "_gt_n_4",
                   "v": "n"
                 },
-                "d"
+                "j"
               ],
               "i": 3,
               "t": "div"
@@ -418,6 +424,7 @@
     },
     " passagers"
   ],
+  "e456a25c2ed6b9e2": "Minutes",
   "e830380acd53b155": {
     "c": "Choisissez votre classe de cabine",
     "i": 1,
@@ -429,6 +436,7 @@
     "t": "h2"
   },
   "f081cfe7f196ed6c": "1 passager",
+  "fa1251135c366ee9": "Réserver un voyage",
   "fff53cab82dd8fc9": {
     "c": "Classes de cabine",
     "i": 1,
