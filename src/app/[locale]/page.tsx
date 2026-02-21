@@ -1,12 +1,14 @@
 import { T, Num } from "gt-next";
-import { Tx } from "gt-next/server";
 import Link from "next/link";
 import StarField from "@/components/StarField";
 import CountdownTimer from "@/components/CountdownTimer";
 import { destinations } from "@/data/destinations";
 import { launches } from "@/data/launches";
+import { getTranslatedDestinationNames } from "@/data/serverTranslations";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const destNames = await getTranslatedDestinationNames();
+
   const nextLaunch = [...launches].sort(
     (a, b) => new Date(a.launchDate).getTime() - new Date(b.launchDate).getTime()
   ).find((l) => new Date(l.launchDate) > new Date());
@@ -51,7 +53,7 @@ export default function HomePage() {
               className="bg-space-card border border-space-border rounded-xl p-5 hover:border-space-purple/50 transition-all group"
             >
               <div className={`h-24 rounded-lg bg-gradient-to-br ${d.gradient} mb-4 opacity-80 group-hover:opacity-100 transition-opacity`} />
-              <h3 className="text-lg font-bold text-white"><Tx>{d.name}</Tx></h3>
+              <h3 className="text-lg font-bold text-white">{destNames[d.id]}</h3>
               <T>
                 <div className="flex gap-4 mt-2 text-xs text-neutral-400">
                   <span><Num>{d.travelTime}</Num> days</span>

@@ -1,16 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { T, Num, Currency, Plural, DateTime } from "gt-next";
+import { T, Var, Num, Currency, Plural, DateTime } from "gt-next";
 import { useGT } from "gt-next/client";
 import { destinations } from "@/data/destinations";
 import { launches } from "@/data/launches";
+import { useTranslatedDestinationNames, useTranslatedCabinNames, useTranslatedCabinFeatures } from "@/data/clientTranslations";
 
 const cabinClasses = ["economy", "business", "first", "suite"] as const;
 type CabinClass = (typeof cabinClasses)[number];
 
 export default function BookingWizard() {
   const gt = useGT();
+  const destNames = useTranslatedDestinationNames();
+  const cabinNames = useTranslatedCabinNames();
+  const cabinFeatureNames = useTranslatedCabinFeatures();
   const [step, setStep] = useState(1);
   const [destinationId, setDestinationId] = useState("");
   const [cabin, setCabin] = useState<CabinClass>("economy");
@@ -79,7 +83,7 @@ export default function BookingWizard() {
                 }`}
               >
                 <div className={`h-20 rounded-lg bg-gradient-to-br ${d.gradient} mb-3`} />
-                <div className="font-bold text-white">{gt(d.name)}</div>
+                <div className="font-bold text-white">{destNames[d.id]}</div>
                 <div className="text-sm text-neutral-400 mt-1">
                   <T><Num>{d.travelTime}</Num> days</T> &middot; <Currency currency="USD">{d.cabinPrices.economy}</Currency>+
                 </div>
@@ -105,7 +109,7 @@ export default function BookingWizard() {
                     : "border-space-border bg-space-card hover:border-space-purple/50"
                 }`}
               >
-                <div className="font-bold text-white capitalize">{gt(c)}</div>
+                <div className="font-bold text-white">{cabinNames[c]}</div>
                 {selectedDest && (
                   <div className="text-space-cyan font-bold mt-2">
                     <Currency currency="USD">{selectedDest.cabinPrices[c]}</Currency>
@@ -114,7 +118,7 @@ export default function BookingWizard() {
                 {selectedDest && (
                   <ul className="text-xs text-neutral-400 mt-2 space-y-1">
                     {selectedDest.cabinFeatures[c].slice(0, 2).map((f, i) => (
-                      <li key={i}>{gt(f)}</li>
+                      <li key={i}>{cabinFeatureNames[f]}</li>
                     ))}
                   </ul>
                 )}
@@ -155,7 +159,7 @@ export default function BookingWizard() {
                 <option value="">{gt("Select a launch date")}</option>
                 {availableLaunches.map((l) => (
                   <option key={l.id} value={l.id}>
-                    {l.missionName} — {new Date(l.launchDate).toLocaleDateString()}
+                    {l.missionName} — {new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(l.launchDate))}
                   </option>
                 ))}
               </select>
@@ -184,18 +188,26 @@ export default function BookingWizard() {
           <div className="bg-space-card border border-space-border rounded-xl p-6 space-y-4">
             <div className="flex justify-between text-sm">
               <span className="text-neutral-400"><T>Destination</T></span>
-              <span className="text-white">{gt(selectedDest.name)}</span>
+              <span className="text-white">{destNames[selectedDest.id]}</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-neutral-400"><T>Cabin</T></span>
-              <span className="text-white capitalize">{gt(cabin)}</span>
+              <span className="text-white">{cabinNames[cabin]}</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-neutral-400"><T>Launch</T></span>
               <span className="text-white">{selectedLaunch.missionName} — <DateTime>{new Date(selectedLaunch.launchDate)}</DateTime></span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-neutral-400"><Plural n={passengers} singular={<T>1 passenger</T>} plural={<T><Num>{passengers}</Num> passengers</T>} /></span>
+              <span className="text-neutral-400">
+                <T>
+                  <Plural
+                    n={passengers}
+                    singular={<><Num>{passengers}</Num> passenger</>}
+                    plural={<><Num>{passengers}</Num> passengers</>}
+                  />
+                </T>
+              </span>
               <span className="text-white"><Currency currency="USD">{subtotal}</Currency></span>
             </div>
             <div className="flex justify-between text-sm">

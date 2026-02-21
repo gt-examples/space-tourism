@@ -1,4 +1,16 @@
 {
+  "01a92f601a26ddf8": "Sesión privada en la cúpula",
+  "02bc448d0638d4a3": "Comidas mejoradas",
+  "02f904d19aea2d10": "Soporte para hibernación",
+  "08075eef3df488df": "Sesión EVA privada",
+  "0be7d08c6058f4be": "Sala preferente",
+  "0c333e243620e8eb": "Certificado de entrenamiento de astronauta",
+  "0e9106169b4ce722": "Restaurante de servicio completo",
+  "0fd72fd444fde5da": "Inserción en órbita lunar y alunizaje",
+  "125300eb8d19b629": "Inserción en órbita marciana y descenso",
+  "1514e2835730b3f9": "Visita al laboratorio de ciencias",
+  "154182fec1ec910c": "Espacio para equipaje de mano",
+  "15aa86ea787e4300": "Programa de ejercicios prioritario",
   "16c6fef55e678453": {
     "c": [
       {
@@ -74,6 +86,12 @@
     "i": 1,
     "t": "div"
   },
+  "1793c8e8c0a0a46a": "Marte",
+  "17e679d157202e17": "Lanzamiento desde el Puerto Espacial Alpha",
+  "18a7f7092c120de6": "Inyección transterrestre de regreso a la Tierra y amerizaje",
+  "194466767b84fcea": "Cápsula de sueño privada",
+  "1a872d9d7fd44edc": "Turno de ejercicio reservado",
+  "1b515f2137ac98cc": "Paseo espacial privado",
   "1bc723518227f9c1": {
     "c": [
       {
@@ -104,11 +122,13 @@
     "i": 1,
     "t": "div"
   },
+  "20f8232daeb7e870": "Recolección de muestras de asteroides",
   "219c9f6bd85ad3e8": {
     "c": "Próximas Ventanas de Lanzamiento",
     "i": 1,
     "t": "h2"
   },
+  "2401775bf5682cd2": "Retorno",
   "26b090f9bb3edaa7": [
     {
       "c": "Misión",
@@ -148,6 +168,7 @@
       "t": "p"
     }
   ],
+  "2daf9b3452e49cf7": "Monitoreo médico",
   "2df4c4ba76dc9909": {
     "c": "Próximo Lanzamiento",
     "i": 1,
@@ -155,8 +176,17 @@
   },
   "2ea95ade2ae9e528": "Impuesto",
   "2ecf88ef9e8e4259": "Inicio",
+  "2f7ce80f44189e29": "Tiempo reservado en la cúpula",
+  "2f84e92ca6119fc2": "Cápsula para dormir",
   "30f3327fab8e25ac": "Segundos",
+  "346a70bded1d8e4d": "Ceremonia de despedida de la tripulación de la estación",
+  "3529e7581573e7f7": "Protección contra la radiación del espacio profundo",
+  "355ba85470b4fc5d": "Acceso compartido a la cúpula",
+  "3625acaa4e82024c": "Sesiones de observación de la Tierra",
+  "365eed8b7b28e390": "Actividades en microgravedad y observación de la Tierra",
   "367ad8a414f1a4a6": "Todos los destinos",
+  "36898da5ec3b4fed": "Ventana panorámica",
+  "39844c6dc655dc28": "Acoplamiento con la estación",
   "3a114edba360504e": [
     {
       "i": 1,
@@ -165,31 +195,109 @@
     },
     " días"
   ],
+  "3f596ec64d8b3da2": "Recorridos por el hábitat de superficie y en rover",
+  "4253508d07344567": "Cápsula reclinable",
   "431eab959a9a3c95": "Destino",
+  "4722047dee87a0b4": "Flota en microgravedad a bordo de la estación orbital, disfruta de impresionantes vistas de la Tierra y vive lo que es ser astronauta.",
   "47fd4d626258aecf": "SpaceVoyager | Reserva tu viaje a las estrellas",
+  "49ad7f48aa44a829": "Entretenimiento de realidad virtual",
+  "4a7a7d6ad8bff240": "Plan de ejercicios",
+  "4aef50ffd8ad04fc": "Despedida",
   "4ee4b35b7d1eb2fb": {
     "c": "Qué se incluye",
     "i": 1,
     "t": "h2"
   },
+  "4f13662ac6c66cc1": "Certificado conmemorativo de vuelo",
+  "5008d9daaafe950f": "Observación de caminatas espaciales",
   "5145c1192d9f49e4": {
     "c": "Pasajeros",
     "i": 1,
     "t": "label"
   },
+  "532998c245045c25": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " pasajeros"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " pasajeros"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " pasajeros"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " pasajero"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
   "5340c7337a92dc4b": "SpaceVoyager",
+  "548ec9900832d37c": "Estación espacial en órbita",
+  "55d8bb9b94840de0": "Vive el icónico paisaje lunar, camina sobre las huellas de los pioneros y contempla la salida de la Tierra desde el Mar de la Tranquilidad.",
+  "593d5827a71d30f7": "Luna",
+  "5a4be55da2f6dedd": "Comidas premium",
+  "5a89c7e9841ac443": "Camarote de la tripulación",
   "601b060b8589e1f2": "Confirmar reserva",
   "601dd75be188564a": {
     "c": "Resumen de reserva",
     "i": 1,
     "t": "h2"
   },
+  "622e5b2c6c4833aa": "Llegada",
+  "63352ccf75e15579": "Franquicia de equipaje extra",
+  "63cbf98896aff7f5": "Exploración",
+  "679c086938376946": "Experiencia gastronómica personalizada",
+  "67ee33f4028b52dd": "Rutina de entrenamiento",
+  "6929d4b6bd833c32": "Camarote privado",
+  "6abcfd221bc55ffd": "Excursiones en la superficie y estancia en el hábitat",
   "6bdd9d15f9272bbe": {
     "c": "Itinerario de misión",
     "i": 1,
     "t": "h2"
   },
   "6fc6888810c397f8": "Reserva Tu Viaje",
+  "71f402d13139d486": "Cinturón de asteroides",
   "73c71e0dd21b305f": "Días",
   "75086bcb1226cb10": "Destinos",
   "7853bd9e23f25bb6": "Total",
@@ -198,12 +306,23 @@
     "i": 1,
     "t": "h2"
   },
+  "79192b5ff1aea754": "Ventana individual",
   "7a10d5bca0805ec4": {
     "c": "Detalles del viaje",
     "i": 1,
     "t": "h2"
   },
+  "7a882691fd93e9fa": "Litera semiprivada",
   "7ac4455553fe632a": "Continuar",
+  "7b9483b48dbd4eaf": "Recorrido en vehículo explorador por la superficie de Marte",
+  "7ce098fce6aff588": "Horario personalizado",
+  "8226d3c930f2327f": "Suministros gourmet",
+  "82a28847edb8148e": "Excursiones preferentes",
+  "82afbb596d6f5589": "Asiento estándar",
+  "8366e419cc9d5a64": "Gastronomía de primera",
+  "881fedeb57000234": "Blindaje contra radiación",
+  "88d391d4c674df11": "Suite",
+  "8a0595f791ba3dc8": "Clase económica",
   "953f077a7ef62a8b": [
     {
       "c": "✓",
@@ -221,11 +340,13 @@
       "t": "p"
     }
   ],
+  "968c493ab8e34c97": "Tiempo de recreación compartido",
   "970b19d746b77459": {
     "c": "Fecha de lanzamiento",
     "i": 1,
     "t": "label"
   },
+  "97229971716b4749": "Suite del comandante",
   "99830836a5c2fcd3": [
     {
       "c": [
@@ -262,8 +383,19 @@
       "t": "div"
     }
   ],
-  "9d61f0b984c891b9": "Selecciona una fecha de despegue",
+  "9bca1f27de5514bb": "Pase para la cubierta de observación",
+  "9d61f0b984c891b9": "Elige una fecha de lanzamiento",
   "9db16884c1c9d324": "Atrás",
+  "9eb20e580293fc56": "Gran suite",
+  "9f1fc11132e7e463": "Crucero por el espacio cislunar",
+  "9f23e25d4bc875e2": "Crucero en órbita de transferencia de Hohmann",
+  "9f72ef566be4e74d": "Chef personal",
+  "a14fc8bd7a207970": "Suite de lujo",
+  "a4f434cc9aa90632": "Orientación en ingravidez",
+  "a65513ba46ca3a64": "Paquete básico de comida",
+  "a76a91876373deaf": "Cocina gourmet",
+  "ab33bffb6c91712f": "Itinerario personalizado",
+  "ae005b1f2aac914e": "Clase ejecutiva",
   "af213589cb39f725": [
     "Día ",
     {
@@ -272,6 +404,13 @@
       "v": "n"
     }
   ],
+  "afac7b5d2bd2c519": "Cabina privada",
+  "b02d0cf38da68f35": "Acceso al observatorio",
+  "b0726f70366d0c92": "Alquiler de traje espacial",
+  "b08186a59c55e0ff": "Tiempo de recreación privado",
+  "b2b753bd242cf8ec": "Camarote amplio",
+  "b3487020c91aa87f": "Adéntrate en el cinturón de asteroides para la expedición definitiva al espacio profundo. Extrae minerales raros y contempla la belleza salvaje de las rocas espaciales.",
+  "b38bb4e5ab64783b": "Permanencia",
   "b42c0fd4d3a62bf6": [
     {
       "c": "Tu Viaje a las Estrellas Comienza Aquí",
@@ -285,6 +424,13 @@
     }
   ],
   "b6d4a541ad645e97": "Reservar ahora",
+  "b7929ae1e050fa65": "Derechos de filmación de documental",
+  "b7eee653fd7b0a38": "Nutrición estándar",
+  "ba5bd7e2cf2deee8": "Aproximación al cinturón de asteroides y a la estación",
+  "bb5103948277a98b": "Sobrevuelo de Marte",
+  "bbdb6e48daad4465": "Desacoplamiento y reentrada atmosférica",
+  "bc6506d8b4453759": "Actividades en grupo",
+  "bffe0ef9a39288f6": "Salida",
   "c00b09731b8ff0bf": [
     {
       "c": "Explora los destinos",
@@ -297,8 +443,16 @@
       "t": "p"
     }
   ],
-  "c24d667a6855f5ed": "Calendario de despegues",
-  "c4767f1200883372": "Explora destinos en todo el sistema solar. Reserva viajes a la Luna, Marte, estaciones orbitales y mucho más con SpaceVoyager.",
+  "c02789cd93927c9b": "Asistente personal",
+  "c24d667a6855f5ed": "Calendario de lanzamientos",
+  "c26a1494197e4153": "Acceso a la sala común",
+  "c4767f1200883372": "Explora destinos en todo el sistema solar. Reserva viajes a la Luna, Marte, estaciones orbitales y más allá con SpaceVoyager.",
+  "c5bceeb885e20c98": "Ventanal de piso a techo",
+  "c6e5df1b9ad29651": "Observatorio privado",
+  "c7cee9cf9d50ea9b": "Cápsula de hibernación",
+  "c7fbf704368eed37": "Servicio de conserjería",
+  "c87fd66aa7086d37": "Enlace de comunicaciones con la Tierra",
+  "c8e172da727c15df": "Tránsito",
   "c93eb145a6e65b7e": {
     "c": "Esto es una demostración. No se ha realizado ninguna reserva real.",
     "i": 1,
@@ -317,6 +471,7 @@
       "t": "p"
     }
   ],
+  "cb961b95f3ac903f": "Sistemas de soporte vital",
   "ce659422b9a8dcf5": "Horas",
   "d0ac65c37c06b64e": [
     {
@@ -415,28 +570,67 @@
       "t": "div"
     }
   ],
+  "d1f5a6be4c5ebef5": "Camarote",
+  "d2934ada813ac08e": "Comidas premium",
+  "d352f7d308547220": "Acceso a la enfermería",
+  "de43917e6e1c4fa3": "Emprende un viaje al Planeta Rojo y explora vastos cañones, imponentes volcanes y la frontera de la colonización humana.",
+  "dfd0369120cda664": "Salida durante la ventana de transferencia de regreso",
   "e0e542bc687568e3": "Iniciar",
-  "e2edff232a13378e": [
-    {
-      "i": 1,
-      "k": "_gt_n_1",
-      "v": "n"
-    },
-    " pasajeros"
-  ],
+  "e1236d71e68c12d8": "Primera clase",
+  "e35c28406eb862b0": {
+    "c": [
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      },
+      "d ",
+      {
+        "i": 3,
+        "k": "_gt_value_3",
+        "v": "v"
+      },
+      "h ",
+      {
+        "i": 4,
+        "k": "_gt_value_4",
+        "v": "v"
+      },
+      "m ",
+      {
+        "i": 5,
+        "k": "_gt_value_5",
+        "v": "v"
+      },
+      "s"
+    ],
+    "i": 1,
+    "t": "span"
+  },
   "e456a25c2ed6b9e2": "Minutos",
+  "e5d2fba5b118d20f": "Paseos por la superficie de asteroides y demostraciones de minería",
+  "e7c9abc7bcbf1d83": "Cubierta de observación privada",
   "e830380acd53b155": {
     "c": "Elige tu clase de cabina",
     "i": 1,
     "t": "h2"
   },
+  "e8bd0d79bfaa03af": "Raciones nutritivas",
+  "e8fecdd3767f09cc": "Entrenador personal",
   "eb431f05ae3b2a51": {
     "c": "Selecciona tu destino",
     "i": 1,
     "t": "h2"
   },
-  "f081cfe7f196ed6c": "1 pasajero",
-  "fa1251135c366ee9": "Reserva un viaje",
+  "ec3dc32669707eb6": "Comidas preparadas por un chef",
+  "f28a682edaac4938": "Iniciar el viaje de regreso de larga distancia",
+  "f51c2e36b6ab4521": "Suministros estándar",
+  "f5e86dee868c0683": "Ventana de observación compartida",
+  "f6c53650fbc3026d": "Acceso prioritario a la cúpula",
+  "f882dad9e280a156": "Litera compartida",
+  "fa1251135c366ee9": "Reservar un viaje",
+  "fea07ca9e4778b74": "Cápsula mejorada",
+  "feae5c37c3536248": "Asistencia gravitatoria alrededor de Marte",
   "fff53cab82dd8fc9": {
     "c": "Clases de Cabina",
     "i": 1,

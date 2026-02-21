@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { T, Num, Currency } from "gt-next";
-import { Tx } from "gt-next/server";
+import { getGT } from "gt-next/server";
 import type { Destination } from "@/data/destinations";
+import { getTranslatedDestinationNames, getTranslatedDestinationDescriptions } from "@/data/serverTranslations";
 
-export default function DestinationCard({ destination }: { destination: Destination }) {
+export default async function DestinationCard({ destination }: { destination: Destination }) {
+  const destNames = await getTranslatedDestinationNames();
+  const destDescs = await getTranslatedDestinationDescriptions();
+
   return (
     <Link
       href={`/destinations/${destination.id}`}
@@ -11,8 +15,8 @@ export default function DestinationCard({ destination }: { destination: Destinat
     >
       <div className={`h-40 bg-gradient-to-br ${destination.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
       <div className="p-5">
-        <h3 className="text-xl font-bold text-white mb-2"><Tx>{destination.name}</Tx></h3>
-        <p className="text-neutral-400 text-sm mb-4"><Tx>{destination.description}</Tx></p>
+        <h3 className="text-xl font-bold text-white mb-2">{destNames[destination.id]}</h3>
+        <p className="text-neutral-400 text-sm mb-4">{destDescs[destination.id]}</p>
         <T>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
             <div>
