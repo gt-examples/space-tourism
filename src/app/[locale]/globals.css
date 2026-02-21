@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-space-bg: #0B0D17;
+  --color-space-card: #1a1d2e;
+  --color-space-border: #2a2d3e;
+  --color-space-purple: #7C3AED;
+  --color-space-cyan: #06B6D4;
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: #0B0D17;
+  color: #f5f5f5;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes drift-slow {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes drift-medium {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes drift-fast {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+.star-layer-slow {
+  animation: drift-slow 120s linear infinite;
+}
+
+.star-layer-medium {
+  animation: drift-medium 80s linear infinite;
+}
+
+.star-layer-fast {
+  animation: drift-fast 50s linear infinite;
+}

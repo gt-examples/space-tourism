@@ -1,0 +1,178 @@
+{
+  "219c9f6bd85ad3e8": {
+    "c": "Prochaines fenêtres de lancement",
+    "i": 1,
+    "t": "h2"
+  },
+  "26b090f9bb3edaa7": [
+    {
+      "c": "Mission",
+      "i": 1,
+      "t": "th"
+    },
+    {
+      "c": "Destination",
+      "i": 2,
+      "t": "th"
+    },
+    {
+      "c": "Date de lancement",
+      "i": 3,
+      "t": "th"
+    },
+    {
+      "c": "Compte à rebours",
+      "i": 4,
+      "t": "th"
+    },
+    {
+      "c": "Sièges disponibles",
+      "i": 5,
+      "t": "th"
+    }
+  ],
+  "283e3970e7081556": [
+    {
+      "c": "Réservez votre voyage",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Sélectionnez votre destination, votre classe de cabine et votre date de lancement pour réserver votre place parmi les étoiles.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "367ad8a414f1a4a6": "Toutes les destinations",
+  "47fd4d626258aecf": "SpaceVoyager | Réservez votre voyage vers les étoiles",
+  "4ee4b35b7d1eb2fb": {
+    "c": "Contenu",
+    "i": 1,
+    "t": "h2"
+  },
+  "5145c1192d9f49e4": {
+    "c": "Passagers",
+    "i": 1,
+    "t": "label"
+  },
+  "5340c7337a92dc4b": "SpaceVoyager",
+  "601b060b8589e1f2": "Confirmer la réservation",
+  "601dd75be188564a": {
+    "c": "Résumé de réservation",
+    "i": 1,
+    "t": "h2"
+  },
+  "6bdd9d15f9272bbe": {
+    "c": "Itinéraire de mission",
+    "i": 1,
+    "t": "h2"
+  },
+  "6fc6888810c397f8": "Réservez votre voyage",
+  "78c24a33890693ea": {
+    "c": "Destinations populaires",
+    "i": 1,
+    "t": "h2"
+  },
+  "7a10d5bca0805ec4": {
+    "c": "Détails du voyage",
+    "i": 1,
+    "t": "h2"
+  },
+  "7ac4455553fe632a": "Continuer",
+  "970b19d746b77459": {
+    "c": "Date de lancement",
+    "i": 1,
+    "t": "label"
+  },
+  "99830836a5c2fcd3": [
+    {
+      "c": [
+        "Ceci est un exemple d'application développée avec ",
+        {
+          "c": "General Translation",
+          "i": 2,
+          "t": "a"
+        },
+        " pour illustrer l'internationalisation. Il ne s'agit pas d'un vrai service de voyage spatial."
+      ],
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "NASA",
+          "i": 4,
+          "t": "a"
+        },
+        {
+          "c": "SpaceX",
+          "i": 5,
+          "t": "a"
+        },
+        {
+          "c": "ESA",
+          "i": 6,
+          "t": "a"
+        }
+      ],
+      "i": 3,
+      "t": "div"
+    }
+  ],
+  "9d61f0b984c891b9": "Sélectionnez votre date de départ",
+  "9db16884c1c9d324": "Retour",
+  "b42c0fd4d3a62bf6": [
+    {
+      "c": "Votre voyage vers les étoiles commence ici",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Réservez votre passage vers la Lune, Mars, les stations orbitales et au-delà. Le cosmos vous attend.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "b6d4a541ad645e97": "Réserver maintenant",
+  "c00b09731b8ff0bf": [
+    {
+      "c": "Explorer les destinations",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "De la lueur familière de la Lune aux confins lointains de la ceinture d'astéroïdes, découvrez les destinations qui vous attendent.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "c4767f1200883372": "Explorez des destinations dans tout le système solaire. Réservez des voyages vers la Lune, Mars, des stations orbitales et au-delà avec SpaceVoyager.",
+  "cab6a960fde80de9": [
+    {
+      "c": "Programme de lancement",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Consultez les missions à venir, vérifiez la disponibilité des places et suivez le compte à rebours jusqu'au lancement.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "e830380acd53b155": {
+    "c": "Choisissez votre classe de cabine",
+    "i": 1,
+    "t": "h2"
+  },
+  "eb431f05ae3b2a51": {
+    "c": "Choisissez votre destination",
+    "i": 1,
+    "t": "h2"
+  },
+  "fff53cab82dd8fc9": {
+    "c": "Classes de cabine",
+    "i": 1,
+    "t": "h2"
+  }
+}
