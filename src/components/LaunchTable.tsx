@@ -33,7 +33,7 @@ export default function LaunchTable() {
               filter === d.id ? "bg-space-purple text-white" : "bg-space-card text-neutral-400 hover:text-white border border-space-border"
             }`}
           >
-            <T>{d.name}</T>
+            {gt(d.name)}
           </button>
         ))}
       </div>
@@ -58,7 +58,7 @@ export default function LaunchTable() {
               return (
                 <tr key={launch.id} className="border-b border-space-border/50 hover:bg-space-card/50">
                   <td className="py-3 px-4 text-white font-medium">{launch.missionName}</td>
-                  <td className="py-3 px-4 text-neutral-300">{dest?.name}</td>
+                  <td className="py-3 px-4 text-neutral-300">{dest && gt(dest.name)}</td>
                   <td className="py-3 px-4 text-neutral-300">
                     <DateTime>{new Date(launch.launchDate)}</DateTime>
                   </td>

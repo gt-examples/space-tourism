@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { T, Num, Currency } from "gt-next";
+import { Tx } from "gt-next/server";
 import type { Destination } from "@/data/destinations";
 
 export default function DestinationCard({ destination }: { destination: Destination }) {
@@ -10,9 +11,9 @@ export default function DestinationCard({ destination }: { destination: Destinat
     >
       <div className={`h-40 bg-gradient-to-br ${destination.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
       <div className="p-5">
+        <h3 className="text-xl font-bold text-white mb-2"><Tx>{destination.name}</Tx></h3>
+        <p className="text-neutral-400 text-sm mb-4"><Tx>{destination.description}</Tx></p>
         <T>
-          <h3 className="text-xl font-bold text-white mb-2">{destination.name}</h3>
-          <p className="text-neutral-400 text-sm mb-4">{destination.description}</p>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
             <div>
               <div className="text-space-cyan font-bold"><Num>{destination.travelTime}</Num>d</div>

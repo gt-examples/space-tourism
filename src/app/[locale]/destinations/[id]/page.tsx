@@ -1,12 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { T, Num, Currency, DateTime } from "gt-next";
-import { destinations, getDestination } from "@/data/destinations";
+import { Tx } from "gt-next/server";
+import { getDestination } from "@/data/destinations";
 import { launches } from "@/data/launches";
-
-export function generateStaticParams() {
-  return destinations.map((d) => ({ id: d.id }));
-}
 
 export default async function TripDetailPage({
   params,
@@ -27,9 +24,9 @@ export default async function TripDetailPage({
     <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Header */}
       <div className={`h-48 sm:h-64 rounded-2xl bg-gradient-to-br ${dest.gradient} mb-8 opacity-80`} />
+      <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4"><Tx>{dest.name}</Tx></h1>
+      <p className="text-neutral-400 text-lg mb-8 max-w-2xl"><Tx>{dest.description}</Tx></p>
       <T>
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">{dest.name}</h1>
-        <p className="text-neutral-400 text-lg mb-8 max-w-2xl">{dest.description}</p>
         <div className="flex flex-wrap gap-6 mb-12 text-sm">
           <div className="bg-space-card border border-space-border rounded-lg px-4 py-3">
             <div className="text-neutral-500">Distance</div>
@@ -54,11 +51,9 @@ export default async function TripDetailPage({
         {dest.itinerary.map((item, i) => (
           <div key={i} className="pl-8 relative">
             <div className="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-space-purple border-2 border-space-bg" />
-            <T>
-              <div className="text-sm text-space-cyan">Day <Num>{item.day}</Num></div>
-              <div className="text-white font-bold">{item.step}</div>
-              <div className="text-neutral-400 text-sm">{item.description}</div>
-            </T>
+            <div className="text-sm text-space-cyan"><T>Day <Num>{item.day}</Num></T></div>
+            <div className="text-white font-bold"><Tx>{item.step}</Tx></div>
+            <div className="text-neutral-400 text-sm"><Tx>{item.description}</Tx></div>
           </div>
         ))}
       </div>
@@ -70,17 +65,15 @@ export default async function TripDetailPage({
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
         {cabins.map((c) => (
           <div key={c} className="bg-space-card border border-space-border rounded-xl p-5">
-            <T>
-              <h3 className="text-lg font-bold text-white capitalize mb-2">{c}</h3>
-              <div className="text-space-purple text-2xl font-bold mb-4">
-                <Currency currency="USD">{dest.cabinPrices[c]}</Currency>
-              </div>
-            </T>
+            <h3 className="text-lg font-bold text-white capitalize mb-2"><Tx>{c}</Tx></h3>
+            <div className="text-space-purple text-2xl font-bold mb-4">
+              <Currency currency="USD">{dest.cabinPrices[c]}</Currency>
+            </div>
             <ul className="space-y-2 text-sm text-neutral-400">
               {dest.cabinFeatures[c].map((f, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-space-cyan mt-0.5">&#8226;</span>
-                  <T>{f}</T>
+                  <Tx>{f}</Tx>
                 </li>
               ))}
             </ul>
@@ -97,7 +90,7 @@ export default async function TripDetailPage({
           {dest.included.map((item, i) => (
             <li key={i} className="flex items-center gap-3 text-neutral-300">
               <span className="text-space-cyan">&#10003;</span>
-              <T>{item}</T>
+              <Tx>{item}</Tx>
             </li>
           ))}
         </ul>

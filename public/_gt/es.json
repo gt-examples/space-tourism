@@ -1,4 +1,109 @@
 {
+  "16c6fef55e678453": {
+    "c": [
+      {
+        "c": [
+          {
+            "c": "Distancia",
+            "i": 3,
+            "t": "div"
+          },
+          {
+            "c": [
+              {
+                "i": 5,
+                "k": "_gt_n_5",
+                "v": "n"
+              },
+              " km"
+            ],
+            "i": 4,
+            "t": "div"
+          }
+        ],
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": [
+          {
+            "c": "Tiempo de viaje",
+            "i": 7,
+            "t": "div"
+          },
+          {
+            "c": [
+              {
+                "i": 9,
+                "k": "_gt_n_9",
+                "v": "n"
+              },
+              " días"
+            ],
+            "i": 8,
+            "t": "div"
+          }
+        ],
+        "i": 6,
+        "t": "div"
+      },
+      {
+        "c": [
+          {
+            "c": "Gravedad",
+            "i": 11,
+            "t": "div"
+          },
+          {
+            "c": [
+              {
+                "i": 13,
+                "k": "_gt_n_13",
+                "v": "n"
+              },
+              "g"
+            ],
+            "i": 12,
+            "t": "div"
+          }
+        ],
+        "i": 10,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "1bc723518227f9c1": {
+    "c": [
+      {
+        "c": [
+          {
+            "i": 3,
+            "k": "_gt_n_3",
+            "v": "n"
+          },
+          " días"
+        ],
+        "i": 2,
+        "t": "span"
+      },
+      {
+        "c": [
+          {
+            "i": 5,
+            "k": "_gt_n_5",
+            "v": "n"
+          },
+          " km"
+        ],
+        "i": 4,
+        "t": "span"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "219c9f6bd85ad3e8": {
     "c": "Próximas Ventanas de Lanzamiento",
     "i": 1,
@@ -33,7 +138,7 @@
   ],
   "283e3970e7081556": [
     {
-      "c": "Reserva tu viaje",
+      "c": "Reserva Tu Viaje",
       "i": 1,
       "t": "h1"
     },
@@ -43,7 +148,22 @@
       "t": "p"
     }
   ],
+  "2df4c4ba76dc9909": {
+    "c": "Próximo Lanzamiento",
+    "i": 1,
+    "t": "h2"
+  },
+  "2ea95ade2ae9e528": "Impuesto",
   "367ad8a414f1a4a6": "Todos los destinos",
+  "3a114edba360504e": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " días"
+  ],
+  "431eab959a9a3c95": "Destino",
   "47fd4d626258aecf": "SpaceVoyager | Reserva tu viaje a las estrellas",
   "4ee4b35b7d1eb2fb": {
     "c": "Qué se incluye",
@@ -68,6 +188,7 @@
     "t": "h2"
   },
   "6fc6888810c397f8": "Reserva Tu Viaje",
+  "7853bd9e23f25bb6": "Total",
   "78c24a33890693ea": {
     "c": "Destinos Populares",
     "i": 1,
@@ -79,6 +200,23 @@
     "t": "h2"
   },
   "7ac4455553fe632a": "Continuar",
+  "953f077a7ef62a8b": [
+    {
+      "c": "✓",
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": "Reserva Confirmada",
+      "i": 2,
+      "t": "h2"
+    },
+    {
+      "c": "Tu referencia de reserva es:",
+      "i": 3,
+      "t": "p"
+    }
+  ],
   "970b19d746b77459": {
     "c": "Fecha de lanzamiento",
     "i": 1,
@@ -120,8 +258,16 @@
       "t": "div"
     }
   ],
-  "9d61f0b984c891b9": "Elige una fecha de salida",
+  "9d61f0b984c891b9": "Selecciona la fecha de lanzamiento",
   "9db16884c1c9d324": "Atrás",
+  "af213589cb39f725": [
+    "Día ",
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    }
+  ],
   "b42c0fd4d3a62bf6": [
     {
       "c": "Tu Viaje a las Estrellas Comienza Aquí",
@@ -147,7 +293,13 @@
       "t": "p"
     }
   ],
-  "c4767f1200883372": "Explora destinos por todo el Sistema Solar. Reserva viajes a la Luna, Marte, estaciones orbitales y más allá con SpaceVoyager.",
+  "c4767f1200883372": "Explora destinos en todo el sistema solar. Reserva viajes a la Luna, Marte, estaciones orbitales y más, con SpaceVoyager.",
+  "c93eb145a6e65b7e": {
+    "c": "Esto es una demostración. No se ha realizado ninguna reserva real.",
+    "i": 1,
+    "t": "p"
+  },
+  "ca402b4524415cb1": "Cabin",
   "cab6a960fde80de9": [
     {
       "c": "Calendario de lanzamientos",
@@ -160,6 +312,112 @@
       "t": "p"
     }
   ],
+  "d0ac65c37c06b64e": [
+    {
+      "c": [
+        {
+          "c": [
+            {
+              "c": [
+                {
+                  "i": 4,
+                  "k": "_gt_n_4",
+                  "v": "n"
+                },
+                "d"
+              ],
+              "i": 3,
+              "t": "div"
+            },
+            {
+              "c": "Viaje",
+              "i": 5,
+              "t": "div"
+            }
+          ],
+          "i": 2,
+          "t": "div"
+        },
+        {
+          "c": [
+            {
+              "c": [
+                {
+                  "i": 8,
+                  "k": "_gt_n_8",
+                  "v": "n"
+                },
+                " km"
+              ],
+              "i": 7,
+              "t": "div"
+            },
+            {
+              "c": "Distancia",
+              "i": 9,
+              "t": "div"
+            }
+          ],
+          "i": 6,
+          "t": "div"
+        },
+        {
+          "c": [
+            {
+              "c": [
+                {
+                  "i": 12,
+                  "k": "_gt_n_12",
+                  "v": "n"
+                },
+                "g"
+              ],
+              "i": 11,
+              "t": "div"
+            },
+            {
+              "c": "Gravedad",
+              "i": 13,
+              "t": "div"
+            }
+          ],
+          "i": 10,
+          "t": "div"
+        }
+      ],
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": [
+        {
+          "c": "Desde ",
+          "i": 15,
+          "t": "span"
+        },
+        {
+          "c": {
+            "i": 17,
+            "k": "_gt_cost_17",
+            "v": "c"
+          },
+          "i": 16,
+          "t": "span"
+        }
+      ],
+      "i": 14,
+      "t": "div"
+    }
+  ],
+  "e0e542bc687568e3": "Iniciar",
+  "e2edff232a13378e": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " pasajeros"
+  ],
   "e830380acd53b155": {
     "c": "Elige tu clase de cabina",
     "i": 1,
@@ -170,6 +428,7 @@
     "i": 1,
     "t": "h2"
   },
+  "f081cfe7f196ed6c": "1 pasajero",
   "fff53cab82dd8fc9": {
     "c": "Clases de Cabina",
     "i": 1,

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { T, Num } from "gt-next";
+import { Num } from "gt-next";
+import { useGT } from "gt-next/client";
 
 interface CountdownTimerProps {
   targetDate: string;
@@ -9,6 +10,7 @@ interface CountdownTimerProps {
 }
 
 export default function CountdownTimer({ targetDate, compact }: CountdownTimerProps) {
+  const gt = useGT();
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [mounted, setMounted] = useState(false);
 
@@ -50,7 +52,7 @@ export default function CountdownTimer({ targetDate, compact }: CountdownTimerPr
             <Num>{item.value}</Num>
           </span>
           <span className="text-xs sm:text-sm text-neutral-400 mt-1">
-            <T>{item.label}</T>
+            {gt(item.label)}
           </span>
         </div>
       ))}

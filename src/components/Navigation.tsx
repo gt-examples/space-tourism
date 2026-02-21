@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { T } from "gt-next";
-import { LocaleSelector } from "gt-next/client";
+import { useGT, LocaleSelector } from "gt-next/client";
 
 function GitHubIcon() {
   return (
@@ -30,6 +30,7 @@ const navItems = [
 ];
 
 export default function Navigation() {
+  const gt = useGT();
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const segments = pathname.split("/").filter(Boolean);
@@ -59,7 +60,7 @@ export default function Navigation() {
                         : "text-neutral-300 hover:bg-space-border/50 hover:text-white"
                     }`}
                   >
-                    <T>{item.labelKey}</T>
+                    {gt(item.labelKey)}
                   </Link>
                 );
               })}
@@ -101,7 +102,7 @@ export default function Navigation() {
                       : "text-neutral-400 hover:bg-space-border/50"
                   }`}
                 >
-                  <T>{item.labelKey}</T>
+                  {gt(item.labelKey)}
                 </Link>
               );
             })}

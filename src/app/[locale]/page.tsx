@@ -1,4 +1,5 @@
 import { T, Num } from "gt-next";
+import { Tx } from "gt-next/server";
 import Link from "next/link";
 import StarField from "@/components/StarField";
 import CountdownTimer from "@/components/CountdownTimer";
@@ -50,8 +51,8 @@ export default function HomePage() {
               className="bg-space-card border border-space-border rounded-xl p-5 hover:border-space-purple/50 transition-all group"
             >
               <div className={`h-24 rounded-lg bg-gradient-to-br ${d.gradient} mb-4 opacity-80 group-hover:opacity-100 transition-opacity`} />
+              <h3 className="text-lg font-bold text-white"><Tx>{d.name}</Tx></h3>
               <T>
-                <h3 className="text-lg font-bold text-white">{d.name}</h3>
                 <div className="flex gap-4 mt-2 text-xs text-neutral-400">
                   <span><Num>{d.travelTime}</Num> days</span>
                   <span><Num>{d.distance}</Num> km</span>
@@ -67,8 +68,8 @@ export default function HomePage() {
         <section className="relative z-10 max-w-3xl mx-auto px-4 py-16 text-center">
           <T>
             <h2 className="text-2xl font-bold text-white mb-2">Next Launch</h2>
-            <p className="text-neutral-400 mb-8">{nextLaunch.missionName}</p>
           </T>
+          <p className="text-neutral-400 mb-8">{nextLaunch.missionName}</p>
           <CountdownTimer targetDate={nextLaunch.launchDate} />
         </section>
       )}

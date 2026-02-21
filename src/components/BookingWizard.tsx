@@ -35,7 +35,9 @@ export default function BookingWizard() {
           <div className="text-space-cyan text-6xl mb-6">&#10003;</div>
           <h2 className="text-3xl font-bold text-white mb-4">Booking Confirmed</h2>
           <p className="text-neutral-400 mb-2">Your booking reference is:</p>
-          <p className="text-2xl font-mono text-space-purple font-bold mb-6">{ref}</p>
+        </T>
+        <p className="text-2xl font-mono text-space-purple font-bold mb-6">{ref}</p>
+        <T>
           <p className="text-neutral-500 text-sm">
             This is a demonstration. No actual booking has been made.
           </p>
@@ -77,12 +79,10 @@ export default function BookingWizard() {
                 }`}
               >
                 <div className={`h-20 rounded-lg bg-gradient-to-br ${d.gradient} mb-3`} />
-                <T>
-                  <div className="font-bold text-white">{d.name}</div>
-                  <div className="text-sm text-neutral-400 mt-1">
-                    <Num>{d.travelTime}</Num> days &middot; <Currency currency="USD">{d.cabinPrices.economy}</Currency>+
-                  </div>
-                </T>
+                <div className="font-bold text-white">{gt(d.name)}</div>
+                <div className="text-sm text-neutral-400 mt-1">
+                  <T><Num>{d.travelTime}</Num> days</T> &middot; <Currency currency="USD">{d.cabinPrices.economy}</Currency>+
+                </div>
               </button>
             ))}
           </div>
@@ -105,9 +105,7 @@ export default function BookingWizard() {
                     : "border-space-border bg-space-card hover:border-space-purple/50"
                 }`}
               >
-                <T>
-                  <div className="font-bold text-white capitalize">{c}</div>
-                </T>
+                <div className="font-bold text-white capitalize">{gt(c)}</div>
                 {selectedDest && (
                   <div className="text-space-cyan font-bold mt-2">
                     <Currency currency="USD">{selectedDest.cabinPrices[c]}</Currency>
@@ -116,7 +114,7 @@ export default function BookingWizard() {
                 {selectedDest && (
                   <ul className="text-xs text-neutral-400 mt-2 space-y-1">
                     {selectedDest.cabinFeatures[c].slice(0, 2).map((f, i) => (
-                      <li key={i}><T>{f}</T></li>
+                      <li key={i}>{gt(f)}</li>
                     ))}
                   </ul>
                 )}
@@ -178,40 +176,36 @@ export default function BookingWizard() {
         </div>
       )}
 
-      {step === 4 && (
+      {step === 4 && selectedDest && selectedLaunch && (
         <div>
           <T>
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Booking Summary</h2>
           </T>
           <div className="bg-space-card border border-space-border rounded-xl p-6 space-y-4">
-            {selectedDest && selectedLaunch && (
-              <T>
-                <div className="flex justify-between text-sm">
-                  <span className="text-neutral-400">Destination</span>
-                  <span className="text-white">{selectedDest.name}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-neutral-400">Cabin</span>
-                  <span className="text-white capitalize">{cabin}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-neutral-400">Launch</span>
-                  <span className="text-white">{selectedLaunch.missionName} — <DateTime>{new Date(selectedLaunch.launchDate)}</DateTime></span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-neutral-400"><Plural n={passengers} singular="1 passenger" plural={<><Num>{passengers}</Num>{" passengers"}</>} /></span>
-                  <span className="text-white"><Currency currency="USD">{subtotal}</Currency></span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-neutral-400">Tax</span>
-                  <span className="text-white"><Currency currency="USD">{tax}</Currency></span>
-                </div>
-                <div className="border-t border-space-border pt-3 flex justify-between">
-                  <span className="font-bold text-white">Total</span>
-                  <span className="font-bold text-space-purple text-xl"><Currency currency="USD">{total}</Currency></span>
-                </div>
-              </T>
-            )}
+            <div className="flex justify-between text-sm">
+              <span className="text-neutral-400"><T>Destination</T></span>
+              <span className="text-white">{gt(selectedDest.name)}</span>
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-neutral-400"><T>Cabin</T></span>
+              <span className="text-white capitalize">{gt(cabin)}</span>
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-neutral-400"><T>Launch</T></span>
+              <span className="text-white">{selectedLaunch.missionName} — <DateTime>{new Date(selectedLaunch.launchDate)}</DateTime></span>
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-neutral-400"><Plural n={passengers} singular={<T>1 passenger</T>} plural={<T><Num>{passengers}</Num> passengers</T>} /></span>
+              <span className="text-white"><Currency currency="USD">{subtotal}</Currency></span>
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-neutral-400"><T>Tax</T></span>
+              <span className="text-white"><Currency currency="USD">{tax}</Currency></span>
+            </div>
+            <div className="border-t border-space-border pt-3 flex justify-between">
+              <span className="font-bold text-white"><T>Total</T></span>
+              <span className="font-bold text-space-purple text-xl"><Currency currency="USD">{total}</Currency></span>
+            </div>
             <div className="flex gap-3 pt-2">
               <button onClick={() => setStep(3)} className="px-4 py-2 text-sm text-neutral-400 hover:text-white">
                 <T>Back</T>
